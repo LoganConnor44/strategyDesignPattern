@@ -2,12 +2,16 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * Concrete class of MuteQuack for ducks that do no make a sound
+ */
 class MuteQuack implements QuackBehaviour {
 
 	/**
-	 * Prints the below string to the CLI
+	 * Returns the below string to the CLI
+	 * @return string
 	 */
 	public function quack() {
-		print "[[[crickets]]]";
+		return "[[[crickets]]]";
 	}
 }

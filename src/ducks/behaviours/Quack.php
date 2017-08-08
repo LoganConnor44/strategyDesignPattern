@@ -2,6 +2,9 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * Concrete class of Quack for ducks that make the expected quack sound
+ */
 class Quack implements QuackBehaviour {
 
 	/**

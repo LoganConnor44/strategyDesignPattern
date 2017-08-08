@@ -2,6 +2,9 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * Concrete class of FlyRocketPowered for ducks that want to be epic
+ */
 class FlyRocketPowered implements FlyBehaviour {
 
 	/**

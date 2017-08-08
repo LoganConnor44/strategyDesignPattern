@@ -2,6 +2,9 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * An interface for all fly behaviours to implement
+ */
 interface FlyBehaviour {
 
 	/**

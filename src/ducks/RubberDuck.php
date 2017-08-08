@@ -5,7 +5,14 @@ namespace StrategyPatternTutorial\Ducks;
 use StrategyPatternTutorial\DuckBehaviours\FlyNoWay as FlyNoWay;
 use StrategyPatternTutorial\DuckBehaviours\Squeak as Squeak;
 
+/**
+ * Rubber Duck class to show different behaviours within this example
+ */
 class RubberDuck extends Duck {
+
+	/**
+	 * Instantiate a given behaviour for object
+	 */
 	public function __construct() {
 		$this->FlyBehaviour = new FlyNoWay();
 		$this->QuackBehaviour = new Squeak();

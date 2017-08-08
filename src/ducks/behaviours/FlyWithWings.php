@@ -2,6 +2,9 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * Concrete class of FlyWithWings for real ducks with wings
+ */
 class FlyWithWings implements FlyBehaviour {
 
 	/**

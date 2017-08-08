@@ -2,6 +2,9 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * Concrete class of FlyNoWay for ducks that do no fly
+ */
 class FlyNoWay implements FlyBehaviour {
 
 	/**

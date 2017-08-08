@@ -2,12 +2,16 @@
 
 namespace StrategyPatternTutorial\DuckBehaviours;
 
+/**
+ * Concrete class of Squeak for false ducks... also referred to as "The One"
+ */
 class Squeak implements QuackBehaviour {
 
 	/**
-	 * Prints the below string to the CLI
+	 * Returns the below string to the CLI
+	 * @return string
 	 */
 	public function quack() {
-		print "Squeak";
+		return "Squeak";
 	}
 }
