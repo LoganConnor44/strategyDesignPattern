@@ -1,6 +1,6 @@
 # Strategy Design Pattern
 
-## Definition From Head First Design Patterns
+## Definition From *Head First Design Patterns*
 
 The Strategy Pattern defines a family of algorithmns, encapsulates each one, and makes them interchangable. This pattern lets the algorithmn vary independently from clients that use it.
 
