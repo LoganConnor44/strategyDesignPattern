@@ -1,5 +1,9 @@
 # Strategy Design Pattern
 
+## Definition From Head First Design Patterns
+
+The Strategy Pattern defines a family of algorithmns, encapsulates each one, and makes them interchangable. This pattern lets the algorithmn vary independently from clients that use it.
+
 ## Description
 
 The Strategy Pattern (sometimes referred to as the Policy Pattern) enables specific algorithms at runtime.
@@ -28,7 +32,7 @@ The Open/Closed principle is also relevant here. The Strategy Pattern allows you
 foreach (var agreement in Agreements) {
 
 	if (Type1.Contains(agreement)) {
-		if ( condition1 || condition2) {
+		if (condition1 || condition2) {
 			this.SendToSys1A();
 		}
 	} else if (Type1.Contains(agreement)) {
