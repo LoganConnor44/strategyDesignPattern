@@ -44,11 +44,24 @@ class DuckTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * Verifies that the property $FlyBehaviour is an object and the correct object - NOT FINISHED - RETURN TO THIS TEST
+	 * Verifies that the property $FlyBehaviour is an object and that we are returned expected results
 	 */
 	public function testFlyBehaviour() {
 		$RedheadDuck = new RedheadDuck();
+
+		$Reflection = new ReflectionClass($RubberDuck);
+		$ReflecProperty = $Reflection->getProperty('FlyBehaviour');
+		$ReflecProperty->setAccessible(TRUE);
+		$this->assertTrue(is_object($ReflecProperty));
+
 		$expected = "I'm flying because of my own two wings!!!";
 		$this->assertEquals($RedheadDuck->performfly(), $expected);
+	}
+
+	public function testQuack() {
+		$MallardDuck = new MallardDuck();
+		$DecoyDuck = new DecoyDuck();
+
+		$this->assertSame($MallardDuck->performfly(), $DecoyDuck->performfly());
 	}
 }
